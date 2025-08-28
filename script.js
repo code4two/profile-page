@@ -7,6 +7,10 @@ submitButton.addEventListener("click", () => {
   console.log("Submit Button Clicked!!🤗");
   console.log(`${data1.value} \n ${data2.value}`);
 
+  if (data2.value) {
+  } else {
+  }
+
   //   IF TRUE, OUTPUT THIS
 
   // DEFAULT OUTPUT AFTER SUBMIT BUTTON IS CLICKED
