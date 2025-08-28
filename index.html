@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <!-- Favicon Link -->
+    <link rel="website icon" type="jpg" href="Images/Elon Musk.jpeg" />
+    <!-- Tailwind Cdn Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font font-awesome Link -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    /> -->
+  </head>
+  <body>
+    <header
+      class="px-4 xl:px-8 py-4 bg-white hover:bg-blue-800 hover:text-white font-medium shadow-xl text-3xl xl:text-2xl"
+    >
+      <nav>
+        <ul class="flex items-center justify-center gap-5 cursor-pointer">
+          <li>
+            <a class="hover:border-b-2 hover:border-white" href="#homePage"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="hover:border-b-2 hover:border-white" href="#aboutPage"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="hover:border-b-2 hover:border-white" href="#contactPage"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="aboutPage">
+      <div
+        class="flex sm:items-center sm:justify-center bg-sky-200 bg-opacity-40 md:py-13"
+      >
+        <div
+          class="flex flex-col items-center p-3 bg-white h-128 sm:w-100 hover:shadow-xl"
+        >
+          <div>
+            <img
+              class="rounded-full w-35 h-35 hover:w-44 hover:h-44"
+              src="Images/Elon Musk.jpeg"
+              alt="profilePlaceholder"
+            />
+          </div>
+          <div class="font-bold my-2">
+            <h2>Elon Musk</h2>
+          </div>
+          <div class="text-center mb-3">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aut
+              placeat tenetur dignissimos aliquid molestias culpa voluptatibus
+              numquam perferendis odio a praesentium, corporis veniam nihil.
+            </p>
+          </div>
+          <div id="contactPage" class="font-bold flex flex-col w-full">
+            <form>
+              <div class="flex flex-col items-start mb-3">
+                <label for="Name">Name</label>
+                <input
+                  class="bg-gray-200 font-normal px-2 py-1 outline-gray-300 w-full"
+                  type="text"
+                  placeholder="Enter Your Name Here"
+                />
+              </div>
+              <div class="flex flex-col items-start mb-3">
+                <label for="Email">Email</label>
+                <input
+                  class="bg-gray-200 font-normal px-2 py-1 outline-gray-300 w-full"
+                  type="email"
+                  placeholder="abcdef@gmail.com"
+                />
+              </div>
+            </form>
+            <button
+              class="bg-blue-800 text-white text-md cursor-pointer py-1 mt-3 w-full"
+            >
+              Follow
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
