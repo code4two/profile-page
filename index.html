@@ -43,7 +43,7 @@
         class="flex items-center justify-center bg-sky-200 bg-opacity-40 sm:py-14"
       >
         <div
-          class="flex flex-col items-center p-3 bg-white h-130 sm:w-100 hover:shadow-xl pt-6 sm:pt-3"
+          class="flex flex-col items-center p-3 bg-white h-132 sm:w-100 hover:shadow-xl pt-6 sm:pt-3"
         >
           <div>
             <img
@@ -63,34 +63,36 @@
             </p>
           </div>
           <div id="contactPage" class="font-bold flex flex-col w-full">
-            <form>
-              <div class="flex flex-col items-start mb-3">
-                <label for="Name">Name</label>
+            <form id="formSubmit">
+              <div class="flex flex-col items-start mb-2">
+                <label for="Username">Name</label>
                 <input
-                  class="bg-gray-200 font-normal px-2 py-1 outline-gray-300 w-full data1"
+                  class="bg-gray-200 font-normal p-2 outline-gray-300 w-full data1"
                   name="Username"
                   value=""
                   type="text"
                   placeholder="Enter your name here"
                   required
+                  autocomplete="a-z"
                 />
               </div>
-              <div class="flex flex-col items-start mb-3">
+              <div class="flex flex-col items-start mb-5">
                 <label for="Email">Email</label>
                 <input
-                  class="bg-gray-200 font-normal px-2 py-1 outline-gray-300 w-full data2"
+                  class="bg-gray-200 font-normal p-2 outline-gray-300 w-full data2"
                   name="Email"
                   value=""
                   type="email"
                   placeholder="abcdef@gmail.com"
+                  autocomplete="a-z"
                 />
               </div>
-              <button
-                class="bg-blue-800 text-white text-md cursor-pointer py-1 mt-3 w-full action"
+              <submit
+                class="bg-blue-800 text-white text-md cursor-pointer p-1 flex justify-center w-full action"
                 type="submit"
               >
                 Follow
-              </button>
+              </submit>
             </form>
           </div>
           <div class="dataEntered my-2"></div>
