@@ -1,3 +1,5 @@
+// MY CODE FOR FORM VALIDATION
+
 const data1 = document.querySelector(".data1");
 const data2 = document.querySelector(".data2");
 const submitButton = document.querySelector(".action");
