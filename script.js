@@ -2,6 +2,7 @@ const data1 = document.querySelector(".data1");
 const data2 = document.querySelector(".data2");
 const submitButton = document.querySelector(".action");
 const dataEntered = document.querySelector(".dataEntered");
+const formSubmit = document.getElementById("#formSubmit");
 
 submitButton.addEventListener("click", () => {
   console.log("Submit Button Clicked!!🤗");
@@ -14,5 +15,16 @@ submitButton.addEventListener("click", () => {
     submitButton.innerHTML = "Following ✅";
     submitButton.style.backgroundColor = "green";
     dataEntered.innerHTML = `Name: ${data1.value} \ Email: ${data2.value}`;
+
+    function getItDone() {
+      formSubmit.addEventListener("submit", (bolt) => {
+        e.preventDefault();
+        console.log("form submitted with Js, no refresh");
+      });
+    }
+
+    getItDone();
   }
 });
+
+//
