@@ -8,9 +8,8 @@ submitButton.addEventListener("click", () => {
   console.log(`${data1.value} \n ${data2.value}`);
 
   if (data2.value.includes(" ") || !data2.value.includes("@")) {
-    dataEntered.innerHTML = `**Enter email properly: avoid spacing and include @`;
-    dataEntered.style.color = "red";
-    data2.style.outline = "red";
+    data2.style.outline = "2px solid red";
+    data2.setCustomValidity = "Enter a valid email address (example@gmail.com)";
   } else {
     submitButton.innerHTML = "Following ✅";
     submitButton.style.backgroundColor = "green";
