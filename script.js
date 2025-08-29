@@ -8,9 +8,12 @@ submitButton.addEventListener("click", () => {
   console.log("Submit Button Clicked!!🤗");
   console.log(`${data1.value} \n ${data2.value}`);
 
-  if (data2.value.includes(" ") || !data2.value.includes("@")) {
+  if (data2.value.includes(" ") || !data2.value.includes("@" && ".com")) {
     data2.style.outline = "2px solid red";
-    data2.setCustomValidity = "Enter a valid email address (example@gmail.com)";
+    dataEntered.innerHTML = "Enter a valid email address (example@gmail.com)";
+  } else if (data1.value.includes("")) {
+    data1.style.outline = "2px solid red";
+    dataEntered.innerHTML = "Name field should not be empty";
   } else {
     submitButton.innerHTML = "Following ✅";
     submitButton.style.backgroundColor = "green";
@@ -19,11 +22,8 @@ submitButton.addEventListener("click", () => {
     function getItDone() {
       formSubmit.addEventListener("submit", (bolt) => {
         bolt.preventDefault();
-        console.log("form submitted with Js, no refresh");
       });
     }
     getItDone();
   }
 });
-
-//
