@@ -11,13 +11,16 @@ submitButton.addEventListener("click", () => {
   if (data2.value.includes(" ") || !data2.value.includes("@" && ".com")) {
     data2.style.outline = "2px solid red";
     dataEntered.innerHTML = "Enter a valid email address (example@gmail.com)";
-  } else if (data1.value.includes("")) {
+  } else if (data1.value === "") {
     data1.style.outline = "2px solid red";
     dataEntered.innerHTML = "Name field should not be empty";
   } else {
     submitButton.innerHTML = "Following ✅";
     submitButton.style.backgroundColor = "green";
     dataEntered.innerHTML = `Name: ${data1.value} \n Email: ${data2.value}`;
+
+    data1.style.outline = "none";
+    data2.style.outline = "none";
 
     function getItDone() {
       formSubmit.addEventListener("submit", (bolt) => {
