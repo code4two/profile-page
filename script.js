@@ -6,7 +6,7 @@ const formSubmit = document.querySelector(".formSubmit");
 
 submitButton.addEventListener("click", () => {
   console.log("Submit Button Clicked!!🤗");
-  console.log(`${data1.value} \n ${data2.value}`);
+  console.log(`${data1.value} \n${data2.value}`);
 
   if (data2.value.includes(" ") || !data2.value.includes("@" && ".com")) {
     data2.style.outline = "2px solid red";
