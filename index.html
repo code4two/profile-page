@@ -68,26 +68,31 @@
                 <label for="Name">Name</label>
                 <input
                   class="bg-gray-200 font-normal px-2 py-1 outline-gray-300 w-full data1"
+                  name="Username"
                   value=""
                   type="text"
                   placeholder="Enter your name here"
+                  required
                 />
               </div>
               <div class="flex flex-col items-start mb-3">
                 <label for="Email">Email</label>
                 <input
                   class="bg-gray-200 font-normal px-2 py-1 outline-gray-300 w-full data2"
+                  name="Email"
                   value=""
                   type="email"
                   placeholder="abcdef@gmail.com"
+                  required
                 />
               </div>
+              <button
+                class="bg-blue-800 text-white text-md cursor-pointer py-1 mt-3 w-full action"
+                type="submit"
+              >
+                Follow
+              </button>
             </form>
-            <button
-              class="bg-blue-800 text-white text-md cursor-pointer py-1 mt-3 w-full action"
-            >
-              Follow
-            </button>
           </div>
           <div class="dataEntered my-2"></div>
         </div>
